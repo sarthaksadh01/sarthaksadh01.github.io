@@ -1,3 +1,5 @@
+$("#head").css("display","none");
+
 $(".buttons").mouseover(function(){
   $(this).addClass("animated jello");
 });
@@ -11,6 +13,7 @@ $(".buttons").mouseout(function(){
 
 setTimeout(function() {
   $(".loader").css("display", "none");
+  $("#head").css("display","block");
   loaded.play();
 }, 2500);
 
